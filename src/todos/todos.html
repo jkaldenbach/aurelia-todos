@@ -1,0 +1,35 @@
+<template>
+  <div class="col-md-6">
+    <div class="page-header">
+      <h1>
+        Todos
+        <small class=" pull-right">
+          <button class="btn btn-default" click.trigger="update()">
+            <i class="fa fa-save"></i>
+          </button>
+          <button class="btn btn-primary">
+            <i class="fa fa-plus"></i>
+          </button>
+        </small>
+      </h1>
+    </div>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Description</th>
+          <th>Due Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr repeat.for="todo of todos">
+          <td>
+            <input type="checkbox" checked.bind="todo.completed" />
+          </td>
+          <td>${todo.description}</td>
+          <td>${todo.dueDate}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>

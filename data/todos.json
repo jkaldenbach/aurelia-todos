@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "description": "do something",
+    "dueDate": "3/19/16",
+    "completed": false
+  }, {
+    "id": 2,
+    "description": "do something else",
+    "dueDate": "3/20/16",
+    "completed": true
+  }, {
+    "id": 3,
+    "description": "do the last thing",
+    "dueDate": "3/21/16",
+    "completed": false
+  }
+]
